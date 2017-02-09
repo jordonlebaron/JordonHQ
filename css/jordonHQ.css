@@ -1,0 +1,154 @@
+ @font-face { 
+ 	font-family: Delicious; 
+ 	src: url('Delicious-Roman.otf'); 
+ } 
+
+body {
+	font-family: 'Delicious', 'Garamond';
+	color: #28394D;
+	text-align: center;
+	font-size: 2em;
+}
+
+
+.menuTiles {
+	width: 8em;
+	height: 2em;
+	padding-top: 2em;
+	text-align: center;
+	margin-top: .1em;
+	margin-left: .1em;
+	color: white;
+	border-radius: .2em;
+}
+
+#background{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+
+/*#menuTopBar{
+	background-color: gray;
+
+}*/
+
+#books {
+	background-color: #41013e;
+	position: absolute;
+	margin-left: 3.2em;
+	margin-top: .1em;
+}
+
+#church {
+	background-color: #690505;
+	position: absolute;
+	margin-left: 12.2em;
+	margin-top: .1em;
+}
+
+#code {
+	background-color: #04442c;
+	position: absolute;
+	margin-left: 21.2em;
+	margin-top: .1em;
+}
+
+#family {
+	background-color: #031d50;
+	position: absolute;
+	margin-left: 30.2em;
+	margin-top: .1em;
+}
+
+/*#menuLeftMiddleBar{ 
+
+}
+
+#menuRightMiddleBar{
+	display: block;
+	float: right;
+}*/
+
+#fitness {
+	background-color: #c89d4e;
+	position: absolute;
+	margin-left: 3.2em;
+	margin-top: 4.7em;
+}
+
+#food {
+	background-color: #41013e;
+	position: absolute;
+	margin-left: 30.2em;
+	margin-top: 4.7em;
+}
+
+#jordonHQ {
+	position: absolute;
+	margin-left: 17em;
+	margin-top: 10em;
+
+}
+
+#games {
+	background-color: #690505;
+	position: absolute;
+	margin-left: 3.2em;
+	margin-top: 9.3em;
+}
+
+#garden {
+	background-color: #04442c;
+	position: absolute;
+	margin-left: 30.2em;
+	margin-top: 9.3em;
+}
+
+/*#menuBottomBar{
+	display: inline-block;
+}*/
+
+#house {
+	background-color: #031d50;
+	position: absolute;
+	margin-left: 3.2em;
+	margin-top: 13.9em;
+}
+
+#movies {
+	background-color: #c89d4e;
+	position: absolute;
+	margin-left: 12.2em;
+	margin-top: 13.9em;
+}
+
+#music {
+	background-color: #41013e;
+	position: absolute;
+	margin-left: 21.2em;
+	margin-top: 13.9em;
+}
+
+#personal {
+	background-color: #690505;
+	position: absolute;
+	margin-left: 30.2em;
+	margin-top: 13.9em;
+}
+
+#slp {
+	background-color: #04442c;
+	position: absolute;
+	margin-left: 3.2em;
+	margin-top: 18.5em;
+}
+
+#tech {
+	background-color: #031d50;
+	position: absolute;
+	margin-left: 36.4em;
+	margin-top: 18.5em;
+}
