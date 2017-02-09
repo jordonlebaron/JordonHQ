@@ -86,11 +86,10 @@ body {
 	margin-top: 4.7em;
 }
 
-#jordonHQ {
+#jordonHQImage {
 	position: absolute;
 	margin-left: 12.2em;
 	margin-top: 4.7em;
-	background: gray;
 	width: 17em;
 	height: 8.5em;
 	border-radius: .2em;
