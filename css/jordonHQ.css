@@ -13,8 +13,8 @@ body {
 
 .menuTiles {
 	width: 8em;
-	height: 2em;
-	padding-top: 2em;
+	height: 1.5em;
+	padding-top: 2.5em;
 	text-align: center;
 	margin-top: .1em;
 	margin-left: .1em;
@@ -88,9 +88,12 @@ body {
 
 #jordonHQ {
 	position: absolute;
-	margin-left: 17em;
-	margin-top: 10em;
-
+	margin-left: 12.2em;
+	margin-top: 4.7em;
+	background: gray;
+	width: 17em;
+	height: 8.5em;
+	border-radius: .2em;
 }
 
 #games {
@@ -149,6 +152,12 @@ body {
 #tech {
 	background-color: #031d50;
 	position: absolute;
-	margin-left: 36.4em;
+	margin-left: 21.2em;
 	margin-top: 18.5em;
+}
+
+.extraTiles {
+	color: white;
+	width: 17em;
+	height: 1em;
 }
