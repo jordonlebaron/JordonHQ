@@ -132,12 +132,18 @@ body {
 	position: absolute;
 	margin-left: 12.2em;
 	margin-top: 4.7em;
-	background-image: url("../images/family14.jpg");
-	background-size: cover;
 	width: 17em;
 	height: 6.6em;
 	border-radius: .2em;
-	color: white;
+	background-color: black;
+}
+
+#jordonHQImage{
+	background-size: cover;
+	width: 7em;
+	height: 8.6em;
+	margin-top: -2em;
+	border-radius: .1em;
 }
 
 #jordonHQTitle {
