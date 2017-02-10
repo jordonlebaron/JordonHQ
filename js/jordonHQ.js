@@ -2,7 +2,9 @@
 //	alert("Hello");
 //}
 
-var myImage = document.getElementByID("jordonHQImage");
+
+//Image Change Code --- I can't get this to work yet
+var myImage = document.getElementById("jordonHQImage");
 
 var imageArray = ["images/family14.jpg", "images/asherFun.jpg"];
 
@@ -17,3 +19,12 @@ function changeImage() {
 }
 
 setInterval(changeImage, 4000);
+//End Image Change Code
+
+var foodTitle = document.getElementById("foodTitle");
+food.setAttribute("font-family", "Garamond");
+
+var foodAppend = document.createElement("li");
+foodTitle.appendChild(foodAppend);
+var foodText = document.createTextNode("Hello");
+foodAppend.appendChild(foodText);

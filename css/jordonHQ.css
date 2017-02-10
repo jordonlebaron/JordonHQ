@@ -13,8 +13,8 @@ body {
 
 .menuTiles {
 	width: 8em;
-	height: 1.5em;
-	padding-top: 2.5em;
+	height: 2em;
+	padding-top: 2em;
 	text-align: center;
 	margin-top: .1em;
 	margin-left: .1em;
@@ -22,13 +22,13 @@ body {
 	border-radius: .2em;
 }
 
-#background{
+/*#background{
 	background-color: black;
 	width: 100%;
 	height: 100%;
 	position: relative;
 
-}
+}*/
 
 /*#menuTopBar{
 	background-color: gray;
@@ -42,11 +42,25 @@ body {
 	margin-top: .1em;
 }
 
+#booksTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #church {
 	background-color: #690505;
 	position: absolute;
 	margin-left: 12.2em;
 	margin-top: .1em;
+}
+
+#churchTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
 }
 
 #code {
@@ -56,11 +70,25 @@ body {
 	margin-top: .1em;
 }
 
+#codeTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #family {
 	background-color: #031d50;
 	position: absolute;
 	margin-left: 30.2em;
 	margin-top: .1em;
+}
+
+#familyTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
 }
 
 /*#menuLeftMiddleBar{ 
@@ -79,6 +107,13 @@ body {
 	margin-top: 4.7em;
 }
 
+#fitnessTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #food {
 	background-color: #41013e;
 	position: absolute;
@@ -86,14 +121,32 @@ body {
 	margin-top: 4.7em;
 }
 
-#jordonHQImage {
+#foodTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
+#jordonHQ {
 	position: absolute;
 	margin-left: 12.2em;
 	margin-top: 4.7em;
+	background-image: url("../images/family14.jpg");
+	background-size: cover;
 	width: 17em;
-	height: 8.5em;
+	height: 6.6em;
 	border-radius: .2em;
+	color: white;
 }
+
+#jordonHQTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+	margin-top: -1.3em;
+}	
 
 #games {
 	background-color: #690505;
@@ -102,11 +155,25 @@ body {
 	margin-top: 9.3em;
 }
 
+#gamesTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #garden {
 	background-color: #04442c;
 	position: absolute;
 	margin-left: 30.2em;
 	margin-top: 9.3em;
+}
+
+#gardenTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
 }
 
 /*#menuBottomBar{
@@ -120,11 +187,25 @@ body {
 	margin-top: 13.9em;
 }
 
+#houseTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #movies {
 	background-color: #c89d4e;
 	position: absolute;
 	margin-left: 12.2em;
 	margin-top: 13.9em;
+}
+
+#moviesTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
 }
 
 #music {
@@ -134,11 +215,25 @@ body {
 	margin-top: 13.9em;
 }
 
+#musicTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
+}
+
 #personal {
 	background-color: #690505;
 	position: absolute;
 	margin-left: 30.2em;
 	margin-top: 13.9em;
+}
+
+#personalTitle {
+	color: white;
+	font-family: Delicious, Garamond;
+	font-size: 1em;
+	text-align: center;
 }
 
 #slp {
