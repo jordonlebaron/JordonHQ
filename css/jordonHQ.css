@@ -1,8 +1,8 @@
- @font-face { 
+ /*@font-face { 
  	font-family: Delicious; 
  	src: url('Delicious-Roman.otf'); 
  } 
-
+*/
 body {
 	font-family: 'Delicious', 'Garamond';
 	color: #28394D;
@@ -151,7 +151,7 @@ body {
 	font-family: Delicious, Garamond;
 	font-size: 1em;
 	text-align: center;
-	margin-top: -1.3em;
+	margin-top: -3.4em;
 }	
 
 #games {
