@@ -85,9 +85,9 @@ if (secondDiff < 0) {
 	}
 // END ROUNDING SECTION ----------------------------------------------^
 
-var el = document.getElementById('jordonHQTitle');
-el.innerHTML = '<p>Established for: ' + yearDiff + ' years, ' 
+var el = document.getElementById('familyTitle');
+el.innerHTML += '<p>Established for: </br>' + yearDiff + ' years, ' 
 			+ monthDiff + ' months, ' + dateDiff + ' days, '
 			+ hourDiff + ' hours, ' + minuteDiff + ' minutes, &amp '
-			+ secondDiff + ' seconds!';
+			+ secondDiff + ' seconds!</p>';
 //This works, now we need to work on rounding the variables correctly.
