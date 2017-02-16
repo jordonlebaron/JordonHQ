@@ -90,4 +90,18 @@ el.innerHTML += '<p>Established for: </br>' + yearDiff + ' years, '
 			+ monthDiff + ' months, ' + dateDiff + ' days, '
 			+ hourDiff + ' hours, ' + minuteDiff + ' minutes, &amp '
 			+ secondDiff + ' seconds!</p>';
-//This works, now we need to work on rounding the variables correctly.
+// END Family Establish Counter
+
+//Adding Subtitles to Book tile with INNERHTML
+var books = document.getElementById('booksTitle');
+var booksTitle = books.innerHTML;
+books.innerHTML = booksTitle + '<p>(List of Books Read & Notes)</p>';
+// END Books Subtitle
+
+//Adding Subtitles to Movies tile with DOM MANIPULATION
+var movies = document.createElement('p');
+var moviesSubtitle = document.createTextNode('Movies Seen & Notes');
+movies.appendChild(moviesSubtitle);
+var position = document.getElementsByTagName('div')[10];
+position.appendChild(movies);
+//END Movies Subtitle
