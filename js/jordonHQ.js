@@ -105,3 +105,25 @@ movies.appendChild(moviesSubtitle);
 var position = document.getElementsByTagName('div')[10];
 position.appendChild(movies);
 //END Movies Subtitle
+
+
+//PLAYING WITH EVENTS
+
+//This area i'd like for displaying message about system maintenance*
+//                                                                  *
+//End System Maintenance............................................*
+
+
+//Playing with Mouseover to show title of tile in center............*
+var el;
+
+function printTile(e){
+	var tileName, target, display;
+	target = e.target;
+	tileName = document.getElementById(target);
+	display = document.getElementById('jordonHQTitle');
+	display.innerHTML = tileName;
+}
+
+el.addEventListener('mouseover', printTile, false);
+//Stuck! Question - how do I getElementById for target????????

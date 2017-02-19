@@ -124,7 +124,7 @@ body {
 }
 
 #foodTitle {
-	color: white;
+	color: gray;
 	font-family: Delicious, Garamond;
 	font-size: 1em;
 	text-align: center;
@@ -138,6 +138,7 @@ body {
 	height: 6.6em;
 	border-radius: .2em;
 	background-color: black;
+	color: white;
 }
 
 #jordonHQImage{
@@ -263,4 +264,8 @@ body {
 	color: white;
 	width: 17em;
 	height: 1em;
+}
+
+.header {
+	
 }
