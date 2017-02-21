@@ -127,3 +127,22 @@ function printTile(e){
 
 el.addEventListener('mouseover', printTile, false);
 //Stuck! Question - how do I getElementById for target????????
+
+//Using jQuery for events...........................................*
+$(function(){
+	var tileID = '';
+	var $tileDetails = $('p');
+
+	$tileDetails.on('mouseover click', function(){
+		tileID = this.id;
+		$tileDetails.children('span').remove();
+		$(this).append(' <span class="menuTiles">' + tileID + '</span>');
+	});
+
+	$tileDetails.on('mouseout', function(){
+		$(this).children('span').remove();
+	});
+//WORKS!!!!-.........................................................*
+
+
+});
