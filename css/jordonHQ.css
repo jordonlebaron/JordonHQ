@@ -3,7 +3,7 @@
  	src: url('Delicious-Roman.otf'); 
  } 
 */
-body {
+/*body {
 	font-family: 'Delicious', 'Garamond';
 	color: #28394D;
 	text-align: center;
@@ -35,7 +35,7 @@ body {
 
 }*/
 
-#books {
+/*#books {
 	background-color: #41013e;
 	position: absolute;
 	margin-left: 3.2em;
@@ -102,7 +102,7 @@ body {
 	float: right;
 }*/
 
-#fitness {
+/*#fitness {
 	background-color: #c89d4e;
 	position: absolute;
 	margin-left: 3.2em;
@@ -189,7 +189,7 @@ body {
 	display: inline-block;
 }*/
 
-#house {
+/*#house {
 	background-color: #031d50;
 	position: absolute;
 	margin-left: 3.2em;
