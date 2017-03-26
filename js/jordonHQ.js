@@ -2,23 +2,60 @@
 //	alert("Hello");
 //}
 
+$(function(){
+
+var $header = $('header');
+	
+	$header.hide()
+	.addClass('center')
+	.fadeIn(1000);
+
+});
+
+
+$(function (){
+
+var $nav = $('nav')
+	
+	$nav.hide()
+	.addClass('center')
+	.slideDown(2000);
+
+});
+
+
+$(function() {
+	var $li = $('li');
+
+	$li.hide()
+	.each(function(index) {
+		$(this).delay(700 * index)
+		.show(700);
+	});
+
+	$li.on('mouseover', function() {
+		$(this).setAttribute('opacity', 0.5);
+
+	});
+
+});
 
 //Image Change Code --- need to figure out picture orientation
-var myImage = document.getElementById("jordonHQImage");
+//var myImage = document.getElementById("jordonHQImage");
 
-var imageArray = ["images/AngeFlower.jpg", "images/asherFun.jpg", "images/family14.jpg"];
+//var imageArray = ["images/AngeFlower.jpg", "images/asherFun.jpg", "images/family14.jpg"];
 
-var imageIndex = 0;
+//var imageIndex = 0;
 
-function changeImage() {
-	myImage.setAttribute("src", imageArray[imageIndex]);
-	imageIndex++;
-	if (imageIndex >= imageArray.length) {
-		imageIndex = 0;
-	}
-}
+//function changeImage() {
+//	myImage.setAttribute("src", imageArray[imageIndex]);
+//	imageIndex++;
+//	if (imageIndex >= imageArray.length) {
+//		imageIndex = 0;
+//	}
+//}
 
-setInterval(changeImage, 4000);
+//setInterval(changeImage, 4000);
 //End Image Change Code
 
 
@@ -34,16 +71,16 @@ setInterval(changeImage, 4000);
 
 
 //Testing HTML editing
-var styleTest = document.getElementById("foodTitle");
-styleTest.style.color = "red";
+//var styleTest = document.getElementById("foodTitle");
+//styleTest.style.color = "red";
 
-var picChange = document.getElementById("Jordon")
+//var picChange = document.getElementById("Jordon")
 
 
 
 //Playing with the TIME methods of javascript
 //Attempt to build time counter for length of Family establishment
-var today = new Date();
+/*var today = new Date();
 var year, month, date, hour, minute, second;
 var established = new Date(2009, 2, 6, 9, 0, 0);
 var yearDiff = today.getFullYear() - established.getFullYear();
@@ -91,58 +128,7 @@ el.innerHTML += '<p>Established for: </br>' + yearDiff + ' years, '
 			+ hourDiff + ' hours, ' + minuteDiff + ' minutes, &amp '
 			+ secondDiff + ' seconds!</p>';
 // END Family Establish Counter
-
-//Adding Subtitles to Book tile with INNERHTML
-var books = document.getElementById('booksTitle');
-var booksTitle = books.innerHTML;
-books.innerHTML = booksTitle + '<p>(List of Books Read & Notes)</p>';
-// END Books Subtitle
-
-//Adding Subtitles to Movies tile with DOM MANIPULATION
-var movies = document.createElement('p');
-var moviesSubtitle = document.createTextNode('Movies Seen & Notes');
-movies.appendChild(moviesSubtitle);
-var position = document.getElementsByTagName('div')[10];
-position.appendChild(movies);
-//END Movies Subtitle
+*/
+// MORE EXPERIMENTS
 
 
-//PLAYING WITH EVENTS
-
-//This area i'd like for displaying message about system maintenance*
-//                                                                  *
-//End System Maintenance............................................*
-
-
-//Playing with Mouseover to show title of tile in center............*
-var el;
-
-function printTile(e){
-	var tileName, target, display;
-	target = e.target;
-	tileName = document.getElementById(target);
-	display = document.getElementById('jordonHQTitle');
-	display.innerHTML = tileName;
-}
-
-el.addEventListener('mouseover', printTile, false);
-//Stuck! Question - how do I getElementById for target????????
-
-//Using jQuery for events...........................................*
-$(function(){
-	var tileID = '';
-	var $tileDetails = $('p');
-
-	$tileDetails.on('mouseover click', function(){
-		tileID = this.id;
-		$tileDetails.children('span').remove();
-		$(this).append(' <span class="menuTiles">' + tileID + '</span>');
-	});
-
-	$tileDetails.on('mouseout', function(){
-		$(this).children('span').remove();
-	});
-//WORKS!!!!-.........................................................*
-
-
-});

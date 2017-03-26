@@ -1,271 +1,146 @@
- /*@font-face { 
- 	font-family: Delicious; 
- 	src: url('Delicious-Roman.otf'); 
- } 
-*/
-/*body {
-	font-family: 'Delicious', 'Garamond';
-	color: #28394D;
-	text-align: center;
-	font-size: 2em;
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,500,500i');
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px; 
+	font-weight: 300;
+	color: #555;
+	margin: 0;
+	padding: 0;
 }
 
-
-.menuTiles {
-	width: 8em;
-	height: 2em;
-	padding-top: 2em;
-	text-align: center;
-	margin-top: .1em;
-	margin-left: .1em;
-	color: white;
-	border-radius: .2em;
-}
-
-/*#background{
-	background-color: black;
-	width: 100%;
-	height: 100%;
+#page {
+	max-width: 960px; /*100%;*/
+	margin: auto;
 	position: relative;
-
-}*/
-
-/*#menuTopBar{
-	background-color: gray;
-
-}*/
-
-/*#books {
-	background-color: #41013e;
-	position: absolute;
-	margin-left: 3.2em;
-	margin-top: .1em;
 }
 
-#booksTitle {
-	color: white;
-	font-family: Delicious, Garamond;
+h1 {
+	margin: 0 0 .5em 0;
+	font-size: 2.8em;
+	font-weight: 300;
+}
+
+h2 {
+	margin: 0 0 .5em 0;
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.1em;
+}
+
+h3 {
+	margin: 0 0 .5em 0;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+h4 {
+	margin: 0 0 1.5em 0;
 	font-size: 1em;
-	text-align: center;
-	margin-top: -2.1em;
+	font-weight: 700;
 }
 
-#church {
-	background-color: #690505;
-	position: absolute;
-	margin-left: 12.2em;
-	margin-top: .1em;
+p {
+	margin: 0 0 1em 0;
 }
 
-#churchTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
+a {
+	color: #007eff;
 }
 
-#code {
-	background-color: #04442c;
-	position: absolute;
-	margin-left: 21.2em;
-	margin-top: .1em;
+a:visited {
+	color: #65b1ff;
 }
 
-#codeTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
+/* Header */
+
+header {
+	width: auto;
+	position: relative;
+	height: 120px;
+	background-color: #fff;
 }
 
-#family {
-	background-color: #031d50;
-	position: absolute;
-	margin-left: 30.2em;
-	margin-top: .3em;
-}
-
-#familyTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: .5em;
-	text-align: center;
-	margin-top: -1.5em;
-}
-
-/*#menuLeftMiddleBar{ 
-
-}
-
-#menuRightMiddleBar{
+header div {
 	display: block;
-	float: right;
-}*/
-
-/*#fitness {
-	background-color: #c89d4e;
-	position: absolute;
-	margin-left: 3.2em;
-	margin-top: 4.7em;
 }
 
-#fitnessTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
+#title {
+	width: auto;
+	height: 100%;
 	text-align: center;
 }
 
-#food {
-	background-color: #41013e;
-	position: absolute;
-	margin-left: 30.2em;
-	margin-top: 4.7em;
+
+/* Section - main */
+
+#main {
+
 }
 
-#foodTitle {
-	color: gray;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
+section aside {
+	width: 210px;
+	height: 600px;
+	margin: 0;
+	padding: 10px;
+	float: left;
+	border: 1px solid black; 
+}
+
+section aside div {
+	width: auto;
+}
+
+section article {
+	width: 460px;
+	height: 480px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.menu-icon {
+	width: 140px;
+	height: 20px;
+	margin: 0 0 3px 0;
+	padding-top: 100px;
+	float: left;
+	text-decoration: none;
 	text-align: center;
+	border: 1px solid black;
 }
 
-#jordonHQ {
-	position: absolute;
-	margin-left: 12.2em;
-	margin-top: 4.7em;
-	width: 17em;
-	height: 6.6em;
-	border-radius: .2em;
-	background-color: black;
-	color: white;
+.left-column {
+	margin-left: 12.5px;
 }
 
-#jordonHQImage{
-	background-size: cover;
-	width: 7em;
-	height: 8.6em;
-	margin-top: -2em;
-	border-radius: .3em;
+.center-column {
+	margin: 0 5px 0 5px;
 }
 
-#jordonHQTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: .8em;
-	text-align: center;
-	margin-top: -1.4em;
-}	
 
-#games {
-	background-color: #690505;
-	position: absolute;
-	margin-left: 3.2em;
-	margin-top: 9.3em;
-}
 
-#gamesTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-}
 
-#garden {
-	background-color: #04442c;
-	position: absolute;
-	margin-left: 30.2em;
-	margin-top: 9.3em;
-}
 
-#gardenTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-}
 
-/*#menuBottomBar{
-	display: inline-block;
-}*/
 
-/*#house {
-	background-color: #031d50;
-	position: absolute;
-	margin-left: 3.2em;
-	margin-top: 13.9em;
-}
 
-#houseTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-}
 
-#movies {
-	background-color: #c89d4e;
-	position: absolute;
-	margin-left: 12.2em;
-	margin-top: 13.9em;
-}
 
-#moviesTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-	margin-top: -2.1em;
-}
 
-#music {
-	background-color: #41013e;
-	position: absolute;
-	margin-left: 21.2em;
-	margin-top: 13.9em;
-}
 
-#musicTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-}
 
-#personal {
-	background-color: #690505;
-	position: absolute;
-	margin-left: 30.2em;
-	margin-top: 13.9em;
-}
 
-#personalTitle {
-	color: white;
-	font-family: Delicious, Garamond;
-	font-size: 1em;
-	text-align: center;
-}
 
-#slp {
-	background-color: #04442c;
-	position: absolute;
-	margin-left: 3.2em;
-	margin-top: 18.5em;
-}
 
-#tech {
-	background-color: #031d50;
-	position: absolute;
-	margin-left: 21.2em;
-	margin-top: 18.5em;
-}
 
-.extraTiles {
-	color: white;
-	width: 17em;
-	height: 1em;
-}
 
-.header {
-	
-}
+
+
+
+
+
+
+
+
+

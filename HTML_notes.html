@@ -1,0 +1,396 @@
+<!-- HTML NOTES -->
+
+<!-- TAGS -->
+
+<!DOCTYPE html> <!-- Covers all html -->
+	
+<head> <!-- Info about the page, including Title -->
+	<meta name="description" content="Jordon's learning page" />
+	<meta name="keywords" content="html, css, javascript, Jordon" />
+	<meta name="robots" content="nofollow" />
+	<meta http-equiv="author" content="Jordon"/>
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="Sat, 27 Jan 2018 05:26:00 MST" />
+
+	<title>Jordon's HTML exploration</title>
+
+<!--For flash video-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script type="text/javascript">
+		var flashvars = {};
+		var params = {movie: "../video/puppy.flv"};
+		swfobject.embedSWF("flash/osplayer.swf", "snow", "400", "320", "8.0.0", flashvars, params);
+	</script>
+	
+
+</head>
+
+<body> <!-- Contains HTML visible in the browser -->
+
+<h1 id="top">h1 Heading</h1>
+<a href="#struct_markup">Structural Markup</a><br />
+<a href="#semantic_markup">Semantic Markup</a><br />
+<a href="#lists">Lists</a><br />
+<a href="#images">Images</a><br />
+<a href="#tables">Tables</a><br />
+<a href="#forms">Forms</a><br />
+<a href="#other_markup">Other Markup</a><br />
+<a href="#flash-video-audio">Flash, Video, Audio</a><br />
+<a href="jordonHQ.html">JordonHQ</a><br />
+<h2>h2 Heading</h2>
+
+<h3>h3 Heading</h3>
+
+<h4>h4 Heading</h4>
+
+<h5>h5 Heading</h5>
+
+<h6>h6 Heading with Paragraph below</h6> 
+
+<p id="struct_markup">THIS PARAGRAPH DETAILS STRUCTURAL MARKUP<br />
+A <b>bold</b> word. <br />
+An <i>italic</i> word. <br />
+Superscript is 3<sup>rd</sup><br />
+Subscript be like H<sub>2</sub>O<br />
+<hr /> <!-- A line break that shows up on the page -->
+</p>
+
+<p id="semantic_markup">THIS PARAGRAPH DETAILS SEMANTIC MARKUP<br />
+A <strong>strong</strong> element with important content<br />
+An element for <em>emphasis</em><br />
+<blockquote>Blockquotes are great.</blockquote><br />
+<q>'q' is for shorter quotes in line with text.</q><br />
+This element is <abbr title="especially">esp.</abbr> important for abbreviation.<br />
+Cite: <cite>HTML amp&; CSS</cite> by John Duckett is a great book.<br />
+Defining Instance: <dfn>HTML</dfn> stands for defining instance, for mentioning items first, like in academic papers.<br />
+Address: <address><a href="mailto:jordon.lebaron@gmail.com" target="_blank">Send me an email!</a></address><br />
+Insert and Delete: I have <del>one</del>, no <ins>two</ins> friends.<br />
+s tag: Use this if <s>something</s> is no longer important but should be noticed.
+</p>
+
+<h2 id="lists">LISTS</h2>
+
+<ol>Ordered List
+	<li>Ordered List Item 1</li>
+	<li>Ordered List Item 2</li>
+	<li>Ordered List Item 3</li>
+</ol>
+
+<ul>Unordered List
+	<li>Unordered List Item 1</li>
+	<li>Unordered List Item 2</li>
+	<li>Unordered List Item 3</li>
+</ul>
+
+<dl>Definition List
+	<dt>Term 1 of definition list</dt>
+		<dd>Definition 1</dd>
+		<dd>Definition 2</dd>
+		<dd>Definition 3</dd>
+	<dt>Term 2 of definition list</dt>
+		<dd>Definition 1</dd>
+		<dd>Definition 2</dd>
+		<dd>Definition 3</dd>
+</dl>
+
+<ul>Nested List
+	<li>List Item 1
+		<ul>
+			<li>Nested List Item 1</li>
+			<li>Nested List Item 2</li>
+			<li>Nested List Item 3</li>
+		</ul>
+	</li>
+	<li>List Item 2
+		<ul>
+			<li>Nested List Item 1</li>
+			<li>Nested List Item 2</li>
+			<li>Nested List Item 3</li>
+		</ul>
+	</li>	
+</ul>
+<p><a href="#top">Top</a>
+
+<!-- IMAGES -->
+<h2 id="images">Images</h2>
+<figure> <!-- Figure is new for combining picture with caption -->
+<img src="images/church_temple.jpg" alt="A picture of the Salt Lake City Temple" title="Salt Lake City Temple" />
+<figcaption>The Salt Lake City Temple</figcaption>
+</figure>
+<p><a href="#top">Top</a>
+
+<ol>
+<b>3 Rules for creating images:</b>
+	<li>Save images in right format</li>
+	<li>Save images at right size</li>
+	<li>Measure images in pixels</li>
+</ol>
+
+<p>Look at tools to edit photos on the Mac, Adobe has good ones for $$$</p>
+
+<ul>
+<b>Types of Images:</b>
+<li>Jpeg</li>
+	<ul>
+		<li>For images with lots of colors</li>
+	</ul>
+<li>Gif</li>
+	<ul>
+		<li>For images with few colors or large areas with the same color</li>
+	</ul>
+<li>Png</li>
+	<ul>
+		<li>Same as Gif</li>
+	</ul>
+</ul>
+
+<ul>
+<b>Other Tips for Images</b>
+<ul>
+	<li>Use images with at least 300 DPI (dots per inch) for printing</li>
+</ul>
+</ul>
+
+<a href="#top">Top</a>
+
+<!-- TABLES -->
+
+<h2 id="tables">TABLES</h2>
+<p>Here is a 3x3 ABC grid using the following elements: table, tr, td, th, thead, tbody, &amp; tfoot; with scope and span abilities</p>
+<table>
+	<thead>
+		<tr>
+			<th colspan="4">Table Head</th>
+		</tr>
+		<th></th>
+		<th scope="col">Col 1</th>
+		<th scope="col">Col 2</th>
+		<th scope="col">Col 3</th>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Row 1</th>
+			<td>A</td>
+			<td rowspan="2">B</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<th scope="row">Row 2</th>
+			<td colspan="2">D</td>
+			<td>E</td>
+		</tr>
+		<tr>
+			<th scope="row">Row 3</th>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">Foot</th>
+			<td>F</td>
+			<td>OO</td>
+			<td>T</td>
+		</tr>
+	</tfoot>
+</table>
+
+<a href="#top">Top</a>
+
+<!-- FORMS -->
+
+<h2 id="forms">FORMS</h2>
+
+<form action="form.txt" method="post">
+	<h4>Text box</h4>
+	<p>User Name: 
+	<input type="text" name="username" size="15" maxlength="30" /> <!-- text creates single line of text; name tells server type of data coming in; size should not be used in new forms; maxlength is self-explanatory -->
+	</p>
+	<h4>Password box</h4>
+	<p>Password: 
+	<input type="password" name="password" size="15" maxlength="30" /> <!-- password blocks out information from sight, needs both type and name -->
+	</p>
+	<h4>Comment box</h4>
+	<p>Leave comments below:
+	<textarea name="comments" cols="20" rows="4">Enter your comments...
+	</textarea>
+	<h4>Radio buttons (Single Choice)</h4>
+	<p>Please select your voice type:
+	<input type="radio" name="voice-type" value="soprano" checked="checked" /> Soprano
+	<input type="radio" name="voice-type" value="alto" /> Alto
+	<input type="radio" name="voice-type" value="tenor" /> Tenor
+	<input type="radio" name="voice-type" value="bass" /> Bass
+	</p>
+	<h4>Checkbox (Multiple Choice)</h4>
+	<p>Please select the genre(s) of music you sing:
+	<input type="checkbox" name="genre" value="classical" checked="checked" /> Classical
+	<input type="checkbox" name="genre" value="jazz" /> Jazz
+	<input type="checkbox" name="genre" value="musical-theater" /> Musical Theater
+	<input type="checkbox" name="genre" value="pop" /> Pop
+	<input type="checkbox" name="genre" value="rock" /> Rock
+	</p>
+	<h4>Drop-down Menu (Single Choice)</h4>
+	<p>Please select your commitment to singing lessons:
+	<select name="term-commitment">
+		<option value="<1 year">&lt;1 year</option>
+		<option value="1-2 years">1-2 years</option>
+		<option value="2+ years" selected="selected">2+ years</option>
+	</select>
+	</p>
+	<h4>Menu Selection (Multiple Choice)</h4>
+	<p>Please select composers with whom you are familiar: (Hold down control while selecting if more than 1 option are applicable)
+	<select name="composers" multiple="multiple">
+		<option value="bach">Bach</option>
+		<option value="mozart">Mozart</option>
+		<option value="beethoven">Beethoven</option>
+		<option value="shubert">Shubert</option>
+	</select>
+	</p>
+	<h4>File Upload</h4>
+	<p>Please upload your file in .txt format</p>
+		<input type="file" name="user-notes" /><br />
+		<input type="submit" value="Upload" />
+	<h4>Submit</h4>
+	<p>Please subscribe to our email list:</p>
+		<input type="text" name="email" />
+		<input type="submit" name="subscribe" value:"Subscribe" />
+	<h4>Image Type</h4>
+	<p>Enter email and click the code to enter the Matrix:</p>
+		<input type="text" name="email" />
+		<input type="image" src="images/code_matrix.jpg" width="100" height="40" />
+	<h4>Button</h4>
+	<button img="Insert_Image_URL" alt="button" width="10" height="10">Button</button> <!-- use CSS for button style -->
+	<input type="hidden" name="bookmark" value="hidden_info" /> <!-- hidden: allows web page authors to add values to forms invisible to user, e.g., indicate which page the user was on when they submitted a form -->
+	<h4>Labels</h4>
+	<label>Age: <input type="text" name="age" /></label>
+	<br />
+	Gender:
+	<input id="female" type="radio" name="gender" value="f" />
+	<label for="female">Female</label>
+	<input id="male" type="radio" name="gender" value="m" />
+	<label for="male">Male</label> <!-- when label is used with a checkbox or radio button, users can click either the form control or label-->
+	<h4>Fieldset</h4>
+	<fieldset>
+		<legend>Contact details</legend> <!--The legend is the fieldset caption -->
+		<label>Email: <br />
+		<input type="text" name="email" required="required" /></label><br />
+		<label>Mobile: <br />
+		<input type="text" name="mobile" required="required" /></label><br />
+		<label>Telephone: <br />
+		<input type="text" name="telephone"></label>
+	</fieldset>
+	<h4>Form Validation</h4>
+	<p>See above fieldset for details - add required attr and value</p>
+	<h4>Date input</h4>
+	<label for="today">Date today: </label>
+	<input id="today" type="date" name="today" />
+	<input type="submit" name="Submit" />
+	<h4>Email input</h4>
+	<label for="email">Email:</label>
+	<input id="email" type="email" name="email" />
+	<input type="submit" name="Submit" />
+	<h4>URL input</h4>
+	<label for="url">URL:</label>
+	<input id="url" type="url" name="website" />
+	<input type="submit" name="Submit" />
+	<h4>Search input</h4>
+	<label for="search">Search:</label>
+	<input id="search" type="search" name="Search" placeholder="Enter keyword" />
+	<input type="submit" name="Search" />
+	<h4>Placeholder</h4>
+	<p>See above search field for info: populates field with faded prompt</p>
+</form>
+
+
+<p>Forms can be sent using "get" or "post"</p>
+<ul>
+	<li>get: for short forms (search boxes, etc.), or retrieving data from web server; get is used as default</li>
+	<li>post: allows file upload, is very long, sensitive info (e.g., passwords), adds info to database</li>
+</ul>
+<p> Where to put labels:
+	<ul>
+		<li>Above or to the left of form controls for:</li>
+			<ul>
+				<li>text inputs</li>
+				<li>text area</li>
+				<li>select boxes</li>
+				<li>file uploads</li>
+			</ul>
+		<li>To the right for:</li>
+			<ul>
+				<li>individual checkboxes</li>
+				<li>individual radio buttons</li>
+			</ul>
+	</ul>
+</p>
+
+<a href="#top">Top</a>
+
+<h2 id="other_markup">Other HTML Markup</h2>
+<h4>Block vs. Inline Elements</h4>
+<p>Block Elements: start new line</p>
+<ul>
+	<li>h1-6</li>
+	<li>p</li>
+	<li>ul</li>
+	<li>li</li>
+</ul>
+<p>Inline Elements: continue flow on same line</p>
+<ul>
+	<li>b</li>
+	<li>em</li>
+	<li>a</li>
+	<li>img</li>
+</ul>
+
+<h4>iframe</h4> <!-- abbr for INLINE FRAME-->
+<p>A window carved out of your page</p>
+<iframe src="https://weather.com/weather/today/l/USUT0225:1:US" height="400" width="600" scrolling="yes"></iframe>
+
+
+<h4>META tags</h4>
+<p>Types of meta tags, description; see head section for use</p>
+<ul>
+	<li>description: helps search engines know basic info about page, limit 155 characters</li>
+	<li>keywords: contains list of keywords separated by comma. used to impact how search engine indexed your site, no longer the case though</li>
+	<li>robots: indicates if search engines should add site to their results</li>
+	<li>author: names author</li>
+	<li>pragma: prevents browser from caching the page</li>
+	<li>expires: sets time for when page should expire and no longer be cached</li>
+</ul>
+
+<a href="#top">Top</a>
+
+<h2 id="flash-video-audio">Flash, Video, Audio</h2>
+
+	<p> Notes: </p>
+	<ul>
+		<li>Best practice: use HTML5 video element (H264 &amp; WebM) and ALSO Flash video (.flv), just in case you run into browsers that don't support one or the other.</li>
+		<li>Adding players and video is really complicated, an specialized course may be in order</li>
+	</ul>
+
+<!-- Video still needs figuring!!
+
+	<video poster="images/puppy.jpg" width="400" height="320" controls="controls">
+		<source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+		<source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+		<div id="snow">
+			<p>You cannot see this video of a puppy playing in the snow because this browser does not support our video formats.</p>
+		</div>
+	</video>
+--> 
+
+<h2>Positioning</h2>
+
+<h4>Centering</h4>
+	<ul>
+		<li>To center boxes on page on within parent element, set left-margin and right-margin to auto</li>
+		<li>Because of the variety in screen sizes, web designers try to keep pgs between 960-1000px wide</li>
+		<li>Also, web designers try to fit the most important info in the top 570-600px vertically</li>
+	</ul>
+
+<a href="#top">Top</a>
+</body>
+
+</html>
