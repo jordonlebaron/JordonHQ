@@ -45,11 +45,18 @@ p {
 }
 
 a {
-	color: #007eff;
+	text-decoration: none;
+	color: #000;
 }
 
-a:visited {
-	color: #65b1ff;
+a:hover {
+	text-decoration: underline;
+	color: rgba(0,0,0,.4);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
 }
 
 /* Header */
@@ -57,7 +64,7 @@ a:visited {
 header {
 	width: auto;
 	position: relative;
-	height: 120px;
+	height: 110px;
 	background-color: #fff;
 }
 
@@ -71,11 +78,15 @@ header div {
 	text-align: center;
 }
 
+#top {
+	padding-top: 10px;
+}
 
 /* Section - main */
 
 #main {
-
+	width: auto;
+	height: 620px;
 }
 
 section aside {
@@ -100,23 +111,206 @@ section article {
 }
 
 .menu-icon {
-	width: 140px;
+	width: 120px;
 	height: 20px;
-	margin: 0 0 3px 0;
+	margin: 0 0 5px 0;
 	padding-top: 100px;
 	float: left;
 	text-decoration: none;
 	text-align: center;
-	border: 1px solid black;
+	
 }
 
 .left-column {
-	margin-left: 12.5px;
+	margin-left: 24px;
 }
 
 .center-column {
-	margin: 0 5px 0 5px;
+	margin: 0 22px 0 22px;
 }
+
+
+/* - Icons- */
+
+section article a {
+	height: 20px;
+}
+
+.menu-icon:hover{
+	height: 17px;
+	border-bottom: #000 3px solid;
+}
+
+#books-icon {
+	background: #fff url("../images/books.jpg") no-repeat center center;
+}
+
+#church-icon {
+	background: #fff url("../images/church.jpg") no-repeat center center;
+}
+
+#code-icon {
+	background: #fff url("../images/code.jpg") no-repeat center center;
+}
+
+#family-icon {
+	background: #fff url("../images/family.jpg") no-repeat center center;
+}
+
+#fitness-icon {
+	background: #fff url("../images/fitness.jpg") no-repeat center center;
+}
+
+#food-icon {
+	background: #fff url("../images/food.jpg") no-repeat center center;
+}
+
+#games-icon {
+	background: #fff url("../images/games.jpg") no-repeat center center;
+}
+
+#garden-icon {
+	background: #fff url("../images/garden.jpg") no-repeat center center;
+}
+
+#house-icon {
+	background: #fff url("../images/house.jpg") no-repeat center center;
+}
+
+#movies-icon {
+	background: #fff url("../images/movies.jpg") no-repeat center center;
+}
+
+#music-icon {
+	background: #fff url("../images/music.jpg") no-repeat center center;
+}
+
+#personal-icon {
+	background: #fff url("../images/personal.jpg") no-repeat center center;
+}
+
+#slp-icon {
+	background: #fff url("../images/slp.jpg") no-repeat center center;
+}
+
+#tech-icon {
+	background: #fff url("../images/tech.jpg") no-repeat center center;
+}
+
+#misc-icon {
+	background: #fff url("../images/misc.jpg") no-repeat center center;
+}
+
+/* -- Inspire -- */
+
+#inspire {
+	text-align: center;
+}
+
+#quotes {
+	font-family: cursive;
+	height: 240px;
+	border: #000 1px dashed;
+	padding-top: 10px;
+}
+
+#fav-links {
+	margin-top: 10px;
+	padding-top: 10px;
+	border: #000 1px dashed;
+}
+
+#fav-links ul li {
+	margin-top: 40px;
+
+}
+
+
+/* -- Navigation -- */
+
+nav {
+	background-color: rgba(0,0,0,.65);
+	position: absolute;
+	height: 40px;
+	width: 925px;
+	top: 70px;
+	left: 0px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: auto;
+}
+
+nav ul li {
+	float: left;
+	width: 120px;
+	height: 30px;
+
+}
+
+nav i {
+	color: #fff;
+}
+
+#nav-1 {
+	margin-left: 15px;
+}
+
+.nav-words {
+	margin-top: 3px;
+}
+
+#nav-2 {
+	margin-left: 365px;
+}
+
+.nav-icons {
+	margin-top: 3px;
+	margin-right: 20px; 
+	width: 30px;
+	height: auto;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+nav ul li a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+/* -- Footer -- */
+
+footer {
+	width: auto;
+	height: 100px;
+	position: relative;
+	margin: 5px;
+}
+
+footer p {
+	margin-left: 378px;
+	padding-top: 10px;
+	text-align: center;
+	position: absolute;
+	font-size: .8em;
+	color: rgba(0,0,0,.7);
+}
+
+
+
+
+
 
 
 
