@@ -82,6 +82,57 @@ header div {
 	padding-top: 10px;
 }
 
+
+/* To Do List */
+
+#to-do-list {
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+#to-do-list li {
+	width: auto;
+	height: 20px;
+	background-color: rgba(43, 128, 246, .25);
+	padding: 5px 0 5px 5px;
+	border: solid #eee 1px;
+}
+
+#newItemButton {
+	padding: 10px 20px 75px 20px; 
+	display: none;
+}
+
+#newItemForm {
+	padding-top: 20px;
+}
+
+#itemDescription {
+	width: auto;
+}
+
+#newItemForm input[type='submit'] {
+	margin-top: 0; 
+	text-align: left;
+}
+
+input[type='submit'], a.add, button, a.show {
+  background-color: #3b3;
+  color: #000;
+  border-radius: 2px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+input[type='submit'], a.add, button {
+  float: right;} 
+
+
 /* Section - main */
 
 #main {
